@@ -1,0 +1,53 @@
+body {
+    font-family: Roboto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+    background-image: url(./bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.search-form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.search-form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+}
+
+.search-form img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.search-form input {
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: lightgray;
+    padding-left: 10px;
+    color: grey;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
