@@ -17,4 +17,14 @@ async function getWeather(location) {
     }
 }
 
-getWeather('cairo');
+const searchForm = document.querySelector('.search-form');
+searchForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const locationInput = document.querySelector('#location');
+    const location = locationInput.value;
+    if (location) {
+        getWeather(location);
+    } else {
+        console.log('Error: Empty Location');
+    }
+})
